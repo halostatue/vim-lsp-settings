@@ -256,7 +256,9 @@
       "command": "elixir-ls",
       "url": "https://github.com/elixir-lsp/elixir-ls",
       "description": "A frontend-independent IDE \"smartness\" server for Elixir.",
-      "requires": [],
+      "requires": [
+        "elixir"
+      ],
       "root_uri_patterns": [
         "mix.exs"
       ],
@@ -1109,8 +1111,7 @@
       "command": "openscad-lsp",
       "url": "https://github.com/Leathong/openscad-LSP",
       "description": "A LSP (Language Server Protocol) server for OpenSCAD.",
-      "requires": [
-      ],
+      "requires": [],
       "vim_plugin": {
         "extensions": [
           "scad"
@@ -1510,6 +1511,14 @@
       "command": "steep",
       "url": "https://github.com/soutaro/steep",
       "description": "Static type checker for Ruby",
+      "requires": [
+        "gem"
+      ]
+    },
+    {
+      "command": "standardrb",
+      "url": "https://github.com/testdouble/standard",
+      "description": "LSP mode for Standard Ruby",
       "requires": [
         "gem"
       ]
@@ -1969,7 +1978,11 @@
       "url": "https://github.com/Prince781/vala-language-server",
       "description": "Code Intelligence for Vala & Genie",
       "requires": [
+        "meson",
         "valac"
+      ],
+      "root_uri_patterns": [
+        "meson.build"
       ]
     }
   ],

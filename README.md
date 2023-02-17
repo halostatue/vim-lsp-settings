@@ -36,18 +36,19 @@ To uninstall server:
 
 Because there is no way to update a server, please run `:LspInstallServer` again, the newer version will be installed.
 
-
 ### Auto-complete
 
 If you want to use auto-completion, you can use one of the following.
 
 #### asyncomplete.vim
+
 ```viml
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 ```
 
 #### ddc.vim
+
 ```viml
 Plug 'Shougo/ddc.vim'
 Plug 'shun/ddc-vim-lsp'
@@ -161,6 +162,7 @@ You can change the directory to install servers by set `g:lsp_settings_servers_d
 | Reason            | reason-language-server              |    Yes    |      Yes      |
 | Ruby              | ruby-lsp                            | UNIX Only |      Yes      |
 | Ruby              | solargraph                          |    Yes    |      Yes      |
+| Ruby              | standardrb                          |    Yes    |      Yes      |
 | Ruby              | steep                               |    Yes    |      Yes      |
 | Ruby              | typeprof                            |    Yes    |      Yes      |
 | Ruby              | rubocop (lsp mode)                  |    Yes    |      No       |
@@ -346,8 +348,8 @@ To use gql-language-server, the `.gqlconfig` has to be located on the top of pro
 ```json5
 {
   schema: {
-    files: 'path/to/schema.graphql'
-  }
+    files: 'path/to/schema.graphql',
+  },
 }
 ```
 
@@ -461,16 +463,16 @@ To edit the project local `settings.json`, do `:LspSettingsLocalEdit`.
 
 Overridable keys are:
 
-* cmd (List ex: `['clangd-6.0', '-enable-snippets']`)
-* initialization_options (Dictionary)
-* allowlist (List)
-* blocklist (List)
-* config (Dictionary)
-* workspace_config (Dictionary)
-* disabled (Boolean)
-* root_uri (String)
-* root_uri_patterns (List)
-* semantic_highlight (Dictionary)
+- cmd (List ex: `['clangd-6.0', '-enable-snippets']`)
+- initialization_options (Dictionary)
+- allowlist (List)
+- blocklist (List)
+- config (Dictionary)
+- workspace_config (Dictionary)
+- disabled (Boolean)
+- root_uri (String)
+- root_uri_patterns (List)
+- semantic_highlight (Dictionary)
 
 If you have some Language Servers and want to use specified the server:
 
